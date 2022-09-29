@@ -13,7 +13,7 @@ class ColumbiaStudentResource:
 
         usr = os.environ.get("diwu")
         pw = os.environ.get("dw3013")
-        h = os.environ.get("localhost")
+        h = os.environ.get("AWS-1")
 
         conn = pymysql.connect(
             user=usr,
