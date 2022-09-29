@@ -13,7 +13,7 @@ class ColumbiaStudentResource:
 
         usr = os.environ.get("admin")
         pw = os.environ.get("20176098wd")
-        h = os.environ.get("AWS-1")
+        h = os.environ.get("hw1-dw3013.c4gryhcdew19.us-east-1.rds.amazonaws.com")
 
         conn = pymysql.connect(
             user=usr,
