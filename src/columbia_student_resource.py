@@ -11,8 +11,8 @@ class ColumbiaStudentResource:
     @staticmethod
     def _get_connection():
 
-        usr = os.environ.get("diwu")
-        pw = os.environ.get("dw3013")
+        usr = os.environ.get("admin")
+        pw = os.environ.get("20176098wd")
         h = os.environ.get("AWS-1")
 
         conn = pymysql.connect(
@@ -20,8 +20,7 @@ class ColumbiaStudentResource:
             password=pw,
             host=h,
             cursorclass=pymysql.cursors.DictCursor,
-            autocommit=True,
-            ssl={'ssl': {}}
+            autocommit=True
         )
         return conn
 
